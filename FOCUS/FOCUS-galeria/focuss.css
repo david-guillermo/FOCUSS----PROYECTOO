@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input{
+    border-radius: 40px;
+    background: #ffffff4f;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
+    background-color: #00000078;
+}
+
+#logo{
+    width: 10px;
+    height: 10px
+}
+
+img{
+    width: 40px;
+    height: 40px;
+}
+
+#contenedorAnclas{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.anclas{
+    font-size: medium;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+ul{
+    /* position: absolute; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+ul li {
+    list-style: none;
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #fff;
+    float: left;
+    box-sizing: border-box; 
+    transition: 0.5s;
+    text-align: center;
+    overflow: hidden;
+}
+
+ul li:nth-child(1){
+    background: url(./imagenes/new\ balance\ 550.webp);
+    background-size: cover;
+    background-position: left top;
+}
+ul li:nth-child(2){
+    background: url(./imagenes/jordan\ 4\ retro\ a\ ma\ maniene\ violet\ ore.jpg);
+    background-size: cover;
+    background-position: left top;
+}
+ul li:nth-child(3){
+    background: url(./imagenes/new\ balance\ 9060\ hongo.webp);
+    background-size: cover;
+    background-position: left top;
+}
+ul li:nth-child(4){
+    background: url(./imagenes/nike\ air\ max\ 1\ patta\ waves\ noise\ aqua.jpg);
+    background-size: cover;
+    background-position: left top;
+}
+ul li:nth-child(5){
+    background: url(./imagenes/jordan\ 4\ retro\ cacao\ wow\ \(gs\).jpg);
+    background-size: cover;
+    background-position: left top;
+}
+ul li:nth-child(6){
+    background: url(./imagenes/mike\ air\ max\ plus\ drift\ phatom\ cacao\ wow.jpg);
+    background-size: cover;
+    background-position: left top;
+}
+ul li:nth-child(7){
+    background: url(./imagenes/ADIDAS\ RESPONCE\ CL\ BAD\ BUNNY\ PASO\ FINO.jpg);
+    background-size: cover;
+    background-position: left top;
+}
+ul li:nth-child(8){
+    background: url(./imagenes/ADIDAS\ YEEZY\ 700\ V3.jpg);
+    background-size: cover;
+    background-position: left top;
+}
+
+
+/* ul:hover li{
+    width: 10%;
+} */
+
+ul li:hover{
+    transform: scale(1.1);
+}
+
+ul li .content{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.4);
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    overflow-y: auto;
+    display: none;
+}
+
+.content::-webkit-scrollbar{
+    width: 3px;
+    background-color: white;
+}
+
+.content::-webkit-scrollbar-thumb{
+    width: 100%;
+    border-radius: 20px;
+    background-color: black;
+}
+
+ul li .content h2{
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+
+ul li .content p{
+    width: 70%;
+    margin: auto;
+    margin-top: 0px;
+}
+
+ul li:hover .content{
+    display: block;
+    top: 0%;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
